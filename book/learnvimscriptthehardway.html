@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>LearnVimScripTtheHardWay | Study</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="morefreeze">
+        <meta name="description" content="learnvimscriptthehardway.md     [learn-vim-script-the-hard-way](http://learnvimscriptthehardway.stevelosh.com/) study note, I finish it at 2014-04-25">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        
+        <link rel="prev" href="./index.html" />
+        
+
+        <meta property="og:title" content="LearnVimScripTtheHardWay | Study">
+        <meta property="og:site_name" content="Study">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/morefreeze">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="morefreeze/Study" data-level="1" data-basepath="." data-revision="1400045681946">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/morefreeze/Study" target="_blank" class="btn pull-left"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+	<div class="dropdown-caret">
+  <span class="caret-outer"></span>
+  <span class="caret-inner"></span>
+</div>
+
+	<div class="btn-group btn-block">
+		<button id="reduce-font-size" class="btn btn-default">A</button>
+		<button id="enlarge-font-size" class="btn btn-default">A</button>
+	</div>
+
+	<ul class="list-group font-family-list">
+		<li class="list-group-item" data-font="0">Serif</li>
+		<li class="list-group-item" data-font="1">Sans</li>
+	</ul>
+
+	<div class="btn-group btn-group-xs btn-block color-theme-list">
+	  <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+	  <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+	</div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/morefreeze/Study/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/morefreeze/Study/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >Study</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="https://github.com/morefreeze" target="blank">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/morefreeze/Study/issues" target="blank">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/morefreeze/Study/edit/master/learnvimscriptthehardway.md" target="blank">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="learnvimscriptthehardway.html">
+                
+                <a href="./learnvimscriptthehardway.html">
+                    <i class="fa fa-check"></i> <b>1.</b> LearnVimScripTtheHardWay
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 100%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./learnvimscriptthehardway.html" title="LearnVimScripTtheHardWay" class="chapter done new-chapter" data-progress="1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h1 id="learch-vimscript-the-hard-way-">learch vimscript the hard way学习笔记</h1>
+<p>@(Study)[vim|学习笔记]</p>
+<h3 id="ch02">CH02</h3>
+<ol>
+<li>布尔型变量可以用<code>:set [no]number</code>这样来设置，<code>:set number!</code>表示取反，<code>:set number?</code>获取当前状态（实际<code>:set nonumber?</code>也可以哟）</li>
+<li>数值型用<code>:set numberwidth=10</code>来设置，同理<code>:set numberwidth?</code>获取当前值</li>
+<li><code>relativenumber</code>或者<code>rnu</code>用来显示相对行号，当前所在行显示绝对行号，两边分别从1,2,3开始显示</li>
+</ol>
+<h3 id="ch03">CH03</h3>
+<ol>
+<li>注意注释不要写在map后面，这样会当成命令去执行<code>map a dd &quot;comment</code></li>
+</ol>
+<h3 id="ch04">CH04</h3>
+<ol>
+<li><code>map</code>,<code>nmap</code>,<code>vmap</code>,<code>imap</code>都知道什么意思吧</li>
+</ol>
+<h3 id="ch05">CH05</h3>
+<ol>
+<li>第四章的<code>map</code>都是会循环定义，如<code>:nmap dd O&lt;esc&gt;jddk</code> 这就是一死循环</li>
+<li>用<code>noremap</code>,<code>nnoremap</code>,<code>inoremap</code>,<code>vnoremap</code>来表示非递归的map</li>
+<li><code>unmap</code>取消map定义</li>
+</ol>
+<h3 id="ch06">CH06</h3>
+<ol>
+<li>有一些键在normal模式几乎不会用到，可以用来map，如<code>&lt;space&gt;</code>,<code>&lt;cr&gt;</code>,<code>&lt;bs&gt;</code>,<code>-</code>,<code>H</code>,<code>L</code></li>
+<li>vim把prefix的key叫作leader，用<code>:let mapleader=&quot;-&quot;</code>来定义，一般会用&quot;,&quot;作为leader</li>
+<li>vim还有种local leader，只作用于当前类型的文件，如py,html，用<code>:lset maplocalleader=&quot;\\&quot;</code>来定义</li>
+</ol>
+<h3 id="ch07">CH07</h3>
+<ol>
+<li>本章教你如何更快地去更快地编辑文件（没打错），用<code>:nnoremap &lt;leader&gt;ev :vsplit $MYVIMRC&lt;cr&gt;</code>去打开vim的配置文件，<em>ev</em>意味着<strong>e</strong>dit my <strong>v</strong>imrc file</li>
+<li>用<code>:nnoremap &lt;leader&gt;sv :source $MYVIMRC&lt;cr&gt;</code> <em>sv</em>意味着<strong>s</strong>ource my <strong>v</strong>imrc file</li>
+<li>最好用<code>$MYVIMRC</code>，这样能在不同系统下兼容</li>
+</ol>
+<h3 id="ch08">CH08</h3>
+<ol>
+<li>vim还有个特性叫“缩写”(abbreviations)，与<code>map</code>不同的是他只出现在插入，替换和命令模式</li>
+<li>缩写可以用于打错字的时候，如<code>:iabbrev waht what</code></li>
+<li>缩写会替换“非关键字符”，这货是啥，用<code>:set iskeyword?</code>看一下</li>
+<li>经常会看到这样<code>iskeyword=@,48-57,_,192-255</code>，这表示关键字符是所有英文大小写字母，数字（48-57），下划线，另外一些特殊字符（192-255）</li>
+<li>你可以看<code>:help isfname</code>了解完整描述，但它货挺长的……（这个实际是vim定义哪些字符可以成为文件名，注意里面没有空格和反斜杠\）</li>
+<li>缩写另一个用处是可以快速输入用户或版权信息，如<code>:iabbrev @@ morefreeze@gmail.com</code></li>
+<li>缩写和<code>map</code>的区别是map一旦发现能匹配上就转换，而缩写需要确认这是个整词（就是isfname定义的）才会替换，假如<code>:inoremap ssig hehehe</code>，如果输入Lessig，会发现后面被替换了，而换成缩写就没有问题</li>
+</ol>
+<h3 id="ch09">CH09</h3>
+<ol>
+<li>这章最后的练习题让你实现个对选中文字两端加单引号的map，注意这里按完<code>v</code>选完文字后，要再按下<code>v</code>或者<code>&lt;esc&gt;</code>确定选完，这时选中的内容实际已经被存起来了，再按<code>`&lt;</code>就能跳到选中的文字开头了</li>
+</ol>
+<h3 id="ch10">CH10</h3>
+<ol>
+<li>有几种办法可以退到normal模式，<ul>
+<li><code>esc</code></li>
+<li><code>&lt;c-c&gt;</code></li>
+<li><code>&lt;c-[&gt;</code></li>
+</ul>
+</li>
+<li>尝试<code>:map jk &lt;esc&gt;</code>或者<code>:map jj &lt;esc&gt;</code></li>
+<li>你要蛋疼想训练你的肌肉记忆新的map，你可以<code>:inoremap &lt;esc&gt; &lt;nop&gt;</code>（训练上面的jk反应）<strong>注意</strong>：这里我尝试把<code>&lt;esc&gt;</code>disable掉了，但出现了delete键失灵的情况，在插入模式按下会插入&#39;[3~&#39;，即使用<a href="http://vim.wikia.com/wiki/Backspace_and_delete_problems#Delete_key_problems" target="_blank">vim wiki</a>上的<code>:fixdel</code>也不管用，所以这里建议尽快训练好<code>jk</code>反应</li>
+</ol>
+<h3 id="ch11">CH11</h3>
+<ol>
+<li><code>:nnoremap &lt;buffer&gt; &lt;leader&gt;x dd</code>这句只会作用在当前光标在的那个窗口，切换到另一个窗口这句就不好使</li>
+<li>一般是不像上面那样写<code>&lt;buffer&gt;</code>的，而是写<code>&lt;localleader&gt;</code>，这类似命名空间，假如你写插件的话，这样会防止你写了半天的map被别人覆盖掉</li>
+<li>还有<code>:setlocal wrap</code>来只对当前窗口有效</li>
+<li>如果local和普通的map都是同一个值的话，会优先执行local的map</li>
+<li>localleader一般用于文件类型的插件</li>
+<li>想知道一个键是否被map可以用<code>:verbose imap &lt;c-h&gt;</code></li>
+</ol>
+<h3 id="ch12-autocommands">CH12 Autocommands</h3>
+<ol>
+<li>正常如果打开一个新文件，并且马上退出，这个文件不会留在硬盘上，如果你执行<code>:autocmd BufNewFile * :write</code>则会让文件留在硬盘上</li>
+<li>我们来解析下这条命令，<code>BufNewFile</code>是vim要监控的事件，<code>*</code>是要过滤的事件，<code>:write</code>要运行的命令</li>
+<li>命令那部分是不允许出来<code>&lt;cr&gt;</code>这种的</li>
+<li>事件的类型有（只是一小部分）：<ul>
+<li>开始编辑一个不存在的文件</li>
+<li>读一个文件无论是否存在</li>
+<li>切换文件的<code>filetype</code>设置</li>
+<li>一段时间内没有按键盘上的某个键</li>
+<li>进入插入模式</li>
+<li>退出插入模式</li>
+</ul>
+</li>
+<li><code>:autocmd BufNewFile *.txt :write</code>这是对.txt后缀的文件进行过滤，只保存这类文件</li>
+<li>可以同时有多个事件<code>:autocmd BufWritePre,BufRead *.html :normal gg=G</code>，在预写和读的时候格式化.html文件</li>
+<li>提一下<code>BufNewFile</code>和<code>BufRead</code>几乎总是同时出现</li>
+<li>文件类型相关的例子<code>:autocmd FileType python     nnoremap &lt;buffer&gt; &lt;localleader&gt;c I#&lt;esc&gt;</code>，当打开一个Python文件时，使用<code>&lt;leader&gt;c</code> 可以快速注释</li>
+<li>通过<code>:help autocmd-events</code>查看更多的事件列表</li>
+<li>在做习题时，发现可以<code>map &lt;buffer&gt; &lt;leader&gt; yyyy</code>而不能<code>map &lt;buffer&gt; &lt;localleader&gt; yyyy</code>，注意这里需要先设置localleader，我猜你就没设<code>:let localleader=&quot;\\&quot;</code></li>
+</ol>
+<h3 id="ch13-buffer-local-abbreviations">CH13 Buffer-Local Abbreviations</h3>
+<ol>
+<li>这章就是说<code>iabbrev</code>也能用<code>&lt;buffer&gt;</code>来修饰</li>
+<li>你想记住某个新的snippet最好办法就是disable掉原来的命令，比如<code>iabbrev &lt;buffer&gt; return NOPENOPENOPE</code></li>
+</ol>
+<h3 id="ch14-autocommand-groups">CH14 Autocommand Groups</h3>
+<ol>
+<li><code>autocmd</code>是不会替换原先的命令的，假如使用两次同样的命令，那触发autocmd时会进行两次命令</li>
+<li>特别要注意在你<code>source $MYVIMRC</code>时，autocmd会再载入一次！</li>
+<li>可以用<code>augroup testgroup autocmd xxx augroup END</code>，这时如果你运行下<code>augroup testgroup autocmd yyy augroup END</code>，你猜<code>xxx</code>还会执行吗？耶，答案是会！</li>
+<li>你可以在augroup里用autocmd!来清空augroup</li>
+</ol>
+<h3 id="ch15-operator-pending-mappings">CH15 Operator-Pending Mappings</h3>
+<ol>
+<li>vim有一类命令后面可以接动作，比如<code>d</code>,<code>y</code>,<code>c</code></li>
+<li><code>onoremap p i(</code>，如果在普通模式下输入<code>dp</code>，相当于<code>di(</code>，就是把括号内的内容删掉</li>
+<li><code>:onoremap b /return&lt;cr&gt;</code>，输入<code>db</code>，会向下删除，直到遇到<strong>return</strong>为止</li>
+<li><code>:onoremap in( :&lt;c-u&gt;normal! f(vi(&lt;cr&gt;</code>，输入<code>cin(</code>会直接将光标移到一个括号，并且删除括号内的内容，然后变成插入模式，<code>&lt;c-u&gt;</code>之后会讲，这里没什么用，只是保证能在所有情况下运行，<code>normal! dddd</code>表示在普通模式下按<code>dddd</code>（删除2行），<code>f(</code>表示前进到最近的左括号，<code>vi(</code>表示选中括号内的内容，别忘最前面是<code>c</code>，所以相当于改变括号内的内容</li>
+<li>定义延迟map有两个规则：<ul>
+<li>如果你定义的内容是一段选中的内容，则vim会直接操作这段内容</li>
+<li>否则vim会操作原光标到到新位置的内容</li>
+</ul>
+</li>
+<li><code>&lt;c-u&gt;</code>可以通过<code>:help omap-info</code>查看，但<strong>没懂</strong>，用于移除vim可能插入的范围（&quot;The CTRL-U (<C-U>) is used to remove the range that Vim may insert.&quot;）</li>
+</ol>
+<h3 id="ch16-more-operator-pending-mappings">CH16 More Operator-Pending Mappings</h3>
+<ol>
+<li>这章讲了更复杂的延迟map的例子，比如<code>:onoremap ih :&lt;c-u&gt;execute &quot;normal! ?^==\\+$\r:nohlsearch\rkvg_&quot;&lt;cr&gt;</code>，在Markdown里，当光标在内容中时，会选中heading</li>
+<li><code>:normal gg</code>相当于普通模式下执行<code>gg</code>，跳到文件头</li>
+<li><code>:execute &quot;normal! gg&quot;</code>和上面是一个效果</li>
+<li><code>:normal! gg/a&lt;cr&gt;</code>就不是你想的那样，因为normal无法识别特别字符，比如<code>&lt;cr&gt;</code>，但是，你可以用<code>:execute &quot;normal! gg/a\r&quot;</code>来完成，注意，将&quot;<cr>&quot;替换成了&quot;\r&quot;</li>
+<li>另一个值得注意的地方是，第1条给出的命令最后用了<code>g_</code>而不是<code>$</code>，他俩都是到当前行最后一个字符，但<code>$</code>会多匹配一个，你感受一下</li>
+<li><code>normal!</code>中的感叹号是表示不使用map</li>
+<li><code>:help normal</code>,<code>:help execute</code>,<code>:help expr_quote</code>也许会有用</li>
+</ol>
+<h3 id="ch17-status-lines">CH17 Status Lines</h3>
+<ol>
+<li><code>:set statusline=%f</code>设置状态栏为显示文件名</li>
+<li>注意后面如果有空格的话，要用&quot;\&quot;来转义，否则会认为是set命令的下一条，因为set支持一次设置多个</li>
+<li>一次写一整行的状态栏太复杂难懂了，可以分开写，只要<code>:set statusline=%f</code>,<code>:set statusline+=\ -\</code>,...</li>
+<li><code>:set statusline=[%4l]</code>的%4表示占4个字符，不足用空格补齐，<code>%-4</code>表示左对齐，<code>%04</code>表示不足用0补齐，<code>%.20</code>表示占20个字符的宽，多的会截掉，一般格式为<code>%-0{minwid}.{maxwid}{item}</code> </li>
+</ol>
+<h3 id="ch18-responsible-coding">CH18 Responsible Coding</h3>
+<ol>
+<li>多写注释</li>
+<li>可以用<code>&quot; Vimscript file settings ---------------------- {{{</code>和<code>: }}}</code>来包住一个想被折叠的部分，同时需要设置<code>:setlocal foldmethod=marker</code>，在这部分内容中时，按<code>za</code>来折叠或打开</li>
+<li>vim有许多缩写的命令，比如<code>setl</code>==<code>setlocal</code>，但十分不建议在vim script里这么写，如果你是临时手写命令的话，可以用缩写</li>
+</ol>
+<h3 id="ch19-variables">CH19 Variables</h3>
+<ol>
+<li>用<code>:set foo=&#39;bar&#39;</code>对变量赋值</li>
+<li><code>:set textwidth=80</code>，用<code>:echo &amp;textwidth</code>获取选项的变量值，对bool值也可以会用，如<code>:let &amp;wrap=1</code></li>
+<li>对选项变量的值进行赋值也相当于修改选项，如<code>:let &amp;textwidth=100</code>,<code>:let &amp;textwidth=&amp;textwidth+10</code></li>
+<li>你可以用<code>:let l:number=1</code>设置local变量</li>
+<li>用<code>:let @a=&#39;hello&#39;</code>设置一个寄存器变量，@&quot;是复制时的内容，@/是按<code>/keyword</code>中的keyword内容</li>
+<li>bool值不可以用纯字母的字符串，如果是&#39;42&#39;,&#39;0&#39;这种还是可以转换成数字1或0的</li>
+<li>可用的寄存器有&quot;-a-zA-Z0-9&quot;（寄存器0存最近一次y的内容，1存最近一次删除或改变的内容，如果少于一行的话或指定别的寄存器，则不存，当还有删除或改变时，会将1的内容移到2，依此类推），未命名寄存器&quot;&quot;（vim的<code>d</code>,<code>c</code>,<code>s</code>,<code>x</code>,<code>y</code>的内容，也包括上一个用名字的寄存器的内容），4个只读寄存器:.%#（&quot;:&quot;保存上一条命令，&quot;.&quot;保存一次输入内容，&quot;%&quot;当前文件全路径，&quot;#&quot;备用文件全路径），表达式寄存器=（这不是一个真的寄存器，只是在一些命令中表示这里是一个寄存器），选择或drop寄存器*+~（这在GUI界面才有），黑洞寄存器_（当使用<code>&quot;_dd</code>时，将不存储dd的内容到任何寄存器），搜索寄存器，太多了，看<code>:help registers</code>吧</li>
+<li><code>:display</code>显示所有寄存器的值</li>
+<li>经常会有想把复制的内容（用<code>y</code>复制，并非剪切板）用在搜索上，或其它地方，这时可以用<code>&lt;c-r&gt;</code>后面再跟寄存器名，比如<code>&lt;c-r&gt;0</code>就是刚才复制的内容，这时会自动替换成刚才复制的值</li>
+</ol>
+<h3 id="ch20-variable-scoping">CH20 Variable Scoping</h3>
+<ol>
+<li><code>:let b:foo=&#39;bar&#39;</code>，设置变量作用域是当前buffer</li>
+<li><code>:help internal-variables</code>查看都有哪些变量作用域</li>
+<li>前面什么都不写，变量是当前作用域，在函数里就只到函数结束，否则就是全局，其他修饰符有<code>b:</code>（当前buffer）,<code>w:</code>（当前窗口）,<code>t:</code>（当前tab）,<code>g:</code>（全局）,<code>l:</code>（当前函数内的变量）,<code>s:</code>（当前使用<code>:source</code>的vim脚本）,<code>a:</code>（函数参数，只在函数内有效，和<code>l:</code>的区别是<code>l:</code>可以随便定义变量，而<code>a:</code>只限于函数传进来的参数）,<code>v:</code>（全局，vim预定义变量）</li>
+<li>可以用<code>:for k in keys(s:)</code>看到所有当前域下的变量</li>
+</ol>
+<h3 id="ch21-conditionals">CH21 Conditionals</h3>
+<ol>
+<li>多行命令可以用<code>|</code>连接起来，而且要注意，除了开头要有<strong>冒号</strong>外，<code>|</code>后面的命令不需要有<strong>冒号</strong></li>
+<li>当判断是个字符串时，会先尝试转成数字，然后再转成bool，比如&quot;10foo&quot;相当于10，同时也可以进行运行<code>&quot;10foo&quot;+10</code>，将会得出20，类似PHP的处理方法</li>
+<li><code>:if 1 | echo &#39;true&#39; | elseif 2 | echo &#39;2&#39; | else | echo &#39;3&#39; | endif</code></li>
+</ol>
+<h3 id="ch22-comparisons">CH22 Comparisons</h3>
+<ol>
+<li>如果<code>:set ignorecase</code>，则<code>:if &#39;foo&#39;==&#39;FOO&#39;</code>就是真了</li>
+<li>这个故事告诉我们写脚本时要假设用户的各种设置，不要相信裸的<code>==</code>，而要用<code>==?</code>表示大小写不敏感的相等，用<code>==#</code>大小敏感的相等，其实大部分比较都支持这个，比如<code>!=#</code>,<code>&gt;=?</code></li>
+<li>还有种<code>smartcase</code>会在模式串都是小写的情况下，认为是大小写不敏感，其他情况认为是敏感的</li>
+<li><code>\c</code>出现在模式串的任何位置都表示这个串是大小写不敏感，<code>\C</code>表示敏感，如<code>\cfoo</code></li>
+</ol>
+<h3 id="ch23-functions">CH23 Functions</h3>
+<ol>
+<li>vim的函数都要<strong>首字母大写</strong></li>
+<li>使用<code>:function Meow() | xxxx | endfunction</code>定义一个函数</li>
+<li>使用<code>:call Meow()</code>调用一个函数</li>
+<li>一个函数最多有<strong>20</strong>个参数</li>
+<li>range函数会对选中内容的每一行执行一次，如果函数自己能处理，<code>:function Count() range</code>，则只会调用一次</li>
+</ol>
+<h3 id="ch24-function-arguments">CH24 Function Arguments</h3>
+<ol>
+<li>vim的函数可以接受参数哟，在函数内使用<code>a:xxx</code>来使用</li>
+<li>函数可以接受变长参数列表，用<code>:function Varg(...)</code>，参数值是<code>a:0</code>这是参数个数,<code>a:1</code>这才是第一个参数,<code>a:000</code>这是显示<strong>可变</strong>参数列表（注意如果是<code>:function Varg2(foo, ...)</code>的形式，<code>a:000</code>只会显示...的参数内容），<code>a:1 == a:000[0]</code></li>
+<li>参数<code>a:xxx</code>是<strong>只读</strong>变量，试图赋值会报错</li>
+</ol>
+<h3 id="ch25-numbers">CH25 Numbers</h3>
+<ol>
+<li>vim的数字有2种，一种是有符号32位整数，一种是单浮点数</li>
+<li><code>echo 0x10 017</code></li>
+<li><code>echo 5.45e+3</code></li>
+<li><code>echo 3/2</code>整除，<code>echo 3/2.0</code>浮点数</li>
+</ol>
+<h3 id="ch26-strings">CH26 Strings</h3>
+<ol>
+<li><code>:echom &#39;Hello&#39; + &#39; world</code>会显示0，因为vim的+只对数字有用，这里字符串都转成了数字</li>
+<li>`:echo 10 + &#39;10.10&#39;会显示20，因为&#39;10.10&#39;是个字符串会转成10</li>
+<li>字符串连接用<code>.</code></li>
+<li><code>:echo 10.10 . &#39;hehe&#39;</code>会报错，因为vim很愿意把字符串转成浮点，但反之不行</li>
+<li>转义符是<code>\</code></li>
+<li>如果用<code>:echom abc\nefg</code>，&#39;\n&#39;会显示成&#39;^@&#39;，这是表示新换行的另一种形式</li>
+<li>用单引号表示不进行转义，<code>&#39;That&#39;&#39;s enough&#39;</code>会显示成&quot;That&#39;s enough&quot;，两个单引号&#39;&#39;是这里唯一的转义，表示一个字面的单引号</li>
+<li>通过<code>:help expr-quote</code>可以知道，<code>\x</code>,<code>\001</code>这种就不说了，<code>\u02a4</code>或<code>\U02a4</code>表示<strong>当前编码</strong>（<code>encoding</code>）下的字符值，<code>\b</code>表示删除，<code>\e</code>表示<esc>，<code>\f</code>表示&quot;formfeed&quot;(<FF>)</li>
+<li>用<code>&lt;c-v&gt;</code>或<code>&lt;c-q&gt;</code>来插入非数字的字面值，比如Tab，比如<code>&lt;c-v&gt;065</code>就是插入&#39;A&#39;</li>
+<li>一般模式匹配的时候用单引号比较好，省去转义\的麻烦，例如<code>a =~ &#39;\s*&#39;</code></li>
+</ol>
+<h3 id="ch27-string-functions">CH27 String Functions</h3>
+<ol>
+<li><code>strlen</code>,<code>len</code>测字符串的长度</li>
+<li><code>split(expr[, patt[, keepempty]])</code>会把字符串按patt切分成List类型，如果patt是<code>xxxx\zs</code>则会保留被切掉的部分，keepempty表示前几部分可以是空，如果不写默认是0，则返回的第一个元素一定是有值的，join(List, glue)会用glue把List粘成一个字符串</li>
+<li><code>tolower</code>,<code>toupper</code>转换大小写</li>
+</ol>
+<h3 id="ch28-execute">CH28 Execute</h3>
+<ol>
+<li><code>execute</code>就是为了给字符串估值，然后去执行，比如<code>:execute &quot;vsplit &quot; . bufname(&#39;#&#39;)&quot;</code></li>
+<li>vim的<code>execute</code>不像其他语言的<code>eval</code>那样危险，因为vim很少接受用户输入，即使接受也是当前用户，反正那是他们的电脑，第二个原因是vim有一些难懂的语法，但<code>execute</code>是最简单的，而且能把多行弄成一行写，见下例子</li>
+<li><code>execute</code>通常用来追加那些不能用|追加的命令，比如<code>:execute &#39;!ls&#39; | echo &#39;abc&#39;</code></li>
+<li>也可用于要打<code>:normal</code>的情况，如<code>:execute  &quot;normal ixxx\&lt;esc&gt;&quot;</code>，效果是切换到插入模式，输出&quot;xxx&quot;然后按<esc></li>
+</ol>
+<h3 id="ch29-normal">CH29 Normal</h3>
+<ol>
+<li>用<code>:normal G</code>就相当于在普通模式下执行<code>G</code>跳到文件最后</li>
+<li><code>:normal</code>也会忠实地使用任何能用的map，如果<code>:nnoremap G dd</code>，则<code>:normal G</code>会相当于删除一行</li>
+<li>可以用<code>:normal!</code>来执行原来的命令的意思</li>
+<li>但是在<code>:normal!</code>无法识别特殊字符，如<code>&lt;cr&gt;</code>，会当成小于号字符串cr和大于号</li>
+<li><code>:helpgrep</code>是跳到与后面模式匹配第一个的帮助上，可以用<code>:cwindow</code>或<code>:cnext</code>来切换，<code>:helpgrep uganda\c</code>忽略大小写</li>
+</ol>
+<h3 id="ch30-execute-normal-">CH30 Execute Normal!</h3>
+<ol>
+<li>使用<code>:execute normal! gg/foo\&lt;cr&gt;</code>就可以接受特殊字符了！</li>
+</ol>
+<h3 id="ch31-basic-regular-expressions">CH31 Basic Regular Expressions</h3>
+<ol>
+<li><code>/</code>和<code>?</code>，前者向后找，后者向前找</li>
+</ol>
+<h3 id="ch32-case-study-grep-operator-part-one">CH32 Case Study: Grep Operator, Part One</h3>
+<ol>
+<li><code>:nnoremap &lt;leader&gt;g :grep -R &lt;cWORD&gt; .&lt;cr&gt;</code>可以搜索<code>&lt;cWORD&gt;</code>，表示光标下的单词（包括连字符，比<code>&lt;cword&gt;</code>更大），之后可以用<code>:cwindow</code>查看<code>quickfix</code>窗口</li>
+<li>以上还有一点要修改，如果光标在一个&quot;foo;ls&quot;下，使用后实际会执行<code>ls</code>命令，原理和SQL注入类似，所以需要用单引号保证字面值，<code>:nnoremap &lt;leader&gt;g :grep -R &#39;&lt;cWORD&gt;&#39; .&lt;cr&gt;</code></li>
+<li>但上面对于光标有单引号的不启作用，用<code>:echom shellescape(expand(&quot;&lt;cWORD&gt;&quot;))</code>可以显示shellescape后的值</li>
+<li><code>:nnoremap &lt;leader&gt;g :silent execute &quot;grep! -R &quot; . shellescape(expand(&quot;&lt;cWORD&gt;&quot;)) . &quot; .&quot;&lt;cr&gt;:copen&lt;cr&gt;</code> 最终版本，前面加个<code>:silent</code>可以防止搜索时的输出，最后再<code>:copen</code>打开结果页</li>
+</ol>
+<h3 id="ch33-case-study-grep-operator-part-two">CH33 Case Study: Grep Operator, Part Two</h3>
+<ol>
+<li>进入.vim/plugin/下，新建一个文件&quot;grep-operator.vim&quot;，写上<code>nnoremap &lt;leader&gt;g :set operatorfunc=GrepOperator&lt;cr&gt;g@</code>和<code>function! GrepOperator(type) | echom &quot;Test&quot; | endfunction</code>，这时用<code>&lt;leader&gt;giw</code>会发现打出了&quot;Test&quot;</li>
+<li>这里函数名后面有个<code>g@</code>，表示这是个&quot;operatorfunc&quot;，就是说后面可以跟动作，比如<code>iw</code>表示光标所在的单词，<code>i(</code>表示光标所在的圆括号，<code>g@</code>后可以跟<code>line</code>,<code>char</code>,<code>block</code>表示动作类型，这个也体现在上面函数的参数<code>type</code>上</li>
+<li>再给visual模式加个命令，加上<code>vnoremap &lt;leader&gt;g :&lt;c-u&gt;call GrepOperator(visualmode())&lt;cr&gt;</code>，解释下这个<code>&lt;c-u&gt;</code>，如果进入选择模式后，这时按<code>:</code>，会发现命令行自带了<code>:&#39;&lt;,&#39;&gt;</code>，这时如果按<code>&lt;c-u&gt;</code>就会“删掉从光标位置到开头的内容”，只剩<code>:</code>，正是我们想要的，这里的参数<code>visualmode()</code>是表示进的哪种visual模式，比如字节型就是<code>v</code>，行选择就是<code>V</code>，块选择就是<code>&lt;c-v&gt;</code></li>
+<li>上面把函数体改成<code>echom a:type</code>后，会有几种情况，<code>viw&lt;leader&gt;g</code>显示<code>v</code>，<code>vjj&lt;leader&gt;g</code>显示<code>V</code>，<code>&lt;leader&gt;gviw</code>显示<code>char</code>，<code>&lt;leader&gt;gG</code>显示<code>line</code></li>
+</ol>
+<h3 id="ch34-case-study-grep-operator-part-three">CH34 Case Study: Grep Operator, Part Three</h3>
+<ol>
+<li>一个可用的思路是，将选中的内容复制到临时寄存器中，但记得最后还原，如<pre><code class="lang-sh"> let saved_unnamed_register = @@
+ # do something
+ let @@ = saved_unnamed_register
+</code></pre>
+</li>
+<li>当你真正要写一个vim脚本时，最好使用命名空间，之前的函数改为<code>nnoremap &lt;leader&gt;g :set operatorfunc=&lt;SID&gt;GrepOperator&lt;cr&gt;g@</code>，这时函数名前加了<code>&lt;SID&gt;</code>，同时，函数定义改为<code>function! s:GrepOperator(type)</code></li>
+<li><code>&lt;SID&gt;</code>应该相当于是Script ID，加上这个会在执行的时候替换为<code>&lt;SNR&gt;12_func</code>这种形式，另外在脚本内部使用时，前面加<code>s:</code>即可，但如果是一个map外部调用，应该使用<code>&lt;SID&gt;</code></li>
+</ol>
+<h3 id="ch35-lists">CH35 Lists</h3>
+<ol>
+<li>vim的list下标是从0开始，用-1表示最后一个元素，-2表示倒数第二个</li>
+<li>使用l[0:2]表示切片，这里注意是表示从第0个到第2个元素，支持[-2:-1]写法，如果下界大于上界则显示空list</li>
+<li>字符串也可以进行list的操作，但要注意<code>&quot;abcd&quot;[-2]</code>这种只用一个负数的操作会显示为空字符串，而用<code>&quot;abcd&quot;[-2:]</code>才能显示为&quot;cd&quot;</li>
+<li><code>add([&#39;a&#39;], &#39;b&#39;)</code>将&quot;b&quot;插入末尾，注意这些命令在normal模式下用要写成<code>:call add(xxx)</code></li>
+<li><code>extend(list, [1,2])</code>将两个list合成一个</li>
+<li><code>len(list)</code>求长度</li>
+<li><code>get(list, 0, &#39;default&#39;)</code>取list[0]，如果不存在则返回&quot;default&quot;</li>
+<li><code>index(list, &#39;a&#39;)</code>返回a在list中第一次出现的位置，没有返回-1</li>
+<li><code>join(list, glue)</code>类似php的<code>implode</code>，将list用glue连接成字符串</li>
+<li><code>reverse(list)</code><strong>就地</strong>倒排list</li>
+<li><code>unlet list[3:]</code>删除list的3到最后</li>
+<li><code>:let l = remove(list, 3, -1)</code>返回删完的list</li>
+<li><code>filter(list, &#39;v:val !~ &quot;x&quot;&#39;)</code>移除元素中带&quot;x&quot;的，后面表达式为真将被留下</li>
+<li>list用<code>+</code>号连接，也可以<code>+=</code></li>
+<li>直接写<code>b = a</code>相当于b是a的引用，对a操作同时也会作用于b，复制可以用<code>b = copy(a)</code>，或者<code>b = a[:]</code>，但是上面这个只对一维有效，如果<code>a[0][1] = &#39;aa&#39;</code>，这时会发现b[0]也变了，深度复制用<code>b = deepcopy(a)</code>（最多能复制100层）</li>
+<li>用<code>:echo a is b</code>来判断是不是同一个list，而<code>a == b</code>是从值上比较的，有个例外是，<code>:echo 4 == &quot;4&quot;</code>显示是1，而<code>:echo [4] == [&quot;4&quot;]</code>显示是0</li>
+<li>支持分别赋值，如<code>:let [var1, var2] = list</code>，如果只需要前几个值，可以这样<code>:let [var1, var2; rest] = mylist</code>，这里rest一定要有，否则会报错</li>
+<li>使用<code>for item in mylist</code>进行循环，如果是多层，则用<code>for [lnum, col] in [[1, 3], [2, 8], [3, 0]]</code>，后面的list必须每项个数一致</li>
+</ol>
+<h3 id="ch36-looping">CH36 Looping</h3>
+<ol>
+<li>for循环像这样<pre><code class="lang-sh">:for i in [1,2,3,4]
+:  let c += i
+:endfor
+</code></pre>
+</li>
+<li>while循环像这样<pre><code class="lang-sh">:while c &lt;= 4
+:  let total += c
+:  let c += 1
+:endwhile
+</code></pre>
+</li>
+<li>有点要注意的是，当<code>for i in mylist</code>时，在对当前元素执行命令前，vim会保存下一个的引用，所以这时即使删除mylist的当前元素也是OK的，但删除之后的元素会导致vim找不到它</li>
+</ol>
+<h3 id="ch37-dictionaries">CH37 Dictionaries</h3>
+<ol>
+<li><code>:echo {&#39;a&#39;: 1, 100: &#39;foo&#39;,}</code>这是定义一个字典，同时最好保留后面的逗号，防止在多行时出错</li>
+<li>vim的字典只能是字符串，写成数字也会被转成字符串</li>
+<li>还可以用<code>:echo {}.a</code>的形式</li>
+<li>用<code>remove(dict, &#39;a&#39;)</code>或<code>unlet(dict.b)</code>来删除元素，十分推荐用<code>remove</code>，因为它的作用比<code>unlet</code>大</li>
+<li>可以用<code>:for key in keys(mydict)</code>来循环得到key值，同理，<code>:for v in values(mydict)</code>循环value，还可以<code>:for [key, value] in items(mydict)</code>两个都循环</li>
+<li>可以用<code>has_key()</code>验证一个key是不是在字典中</li>
+<li>字典的函数和上面list的函数类似</li>
+</ol>
+<h3 id="ch38-toggling">CH38 Toggling</h3>
+<ol>
+<li>之前学过用<code>:setlocal nu!</code>是可以开头某个布尔值的，下面来看下对于非布尔怎么做</li>
+<li>比如可以检测值满足某个条件A时，设为x，满足条件B时，设为y这样，例如<pre><code class="lang-sh">nnoremap &lt;leader&gt;f :call FoldColumnToggle()&lt;cr&gt;
+function! FoldColumnToggle()
+ if &amp;foldcolumn
+     setlocal foldcolumn=0
+ else
+     setlocal foldcolumn=4
+ endif
+endfunction
+</code></pre>
+</li>
+<li>或者打开或关闭某个窗口，如<code>:copen</code>和<code>:cclose</code>，这时可以用全局变量标识<pre><code class="lang-sh">nnoremap &lt;leader&gt;q :call QuickfixToggle()&lt;cr&gt;
+function! QuickfixToggle()
+ if g:quickfix_is_open
+     cclose
+     let g:quickfix_is_open = 0
+ else
+     copen
+     let g:quickfix_is_open = 1
+ endif
+endfunction
+</code></pre>
+这里只有一点不太完美，如果用户手动打开了窗口，则全局变量是不会更新的，但这里要花大工夫来完成，得不偿失</li>
+<li>这里还有一点是在打开多个文件再使用<code>&lt;leader&gt;q</code>时，如果在quick-fix窗口中使用，则会返回上一个split的窗口，而不是之前<code>copen</code>时所在的窗口，所以要做以下修改，同时这也是个约定俗成的写法<pre><code class="lang-sh">nnoremap &lt;leader&gt;q :call QuickfixToggle()&lt;cr&gt;
+let g:quickfix_is_open = 0
+function! QuickfixToggle()
+ if g:quickfix_is_open
+     cclose
+     let g:quickfix_is_open = 0
+     execute g:quickfix_return_to_window . &quot;wincmd w&quot;
+ else
+     let g:quickfix_return_to_window = winnr()
+     copen
+     let g:quickfix_is_open = 1
+ endif
+endfunction
+</code></pre>
+</li>
+</ol>
+<h3 id="ch39-functional-programming">CH39 Functional Programming</h3>
+<ol>
+<li>就是你可以把变量赋成函数，然后变量名就相当于函数名去调用，这里要注意一点是，变量可以不像函数名那样遵守首字母大写的约定，如<pre><code class="lang-sh">:let funcs = [function(&quot;Append&quot;), function(&quot;Pop&quot;)]
+:echo funcs[1]([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 1)
+</code></pre>
+</li>
+<li>再来感受一个类似py中的map的例子<pre><code class="lang-sh">function! Mapped(fn, l)
+ let new_list = deepcopy(a:l)
+ call map(new_list, string(a:fn) . &#39;(v:val)&#39;)
+ return new_list
+endfunction
+</code></pre>
+相当于对l数组中的所有元素过一遍函数fn</li>
+</ol>
+<h3 id="ch40-paths">CH40 Paths</h3>
+<ol>
+<li>为啥这章和上章函数式编程没有一点关系了……</li>
+<li>获取绝对路径，<code>:echom expand(&#39;%:p&#39;)</code>或<code>:echom fnamemodify(&#39;foo.txt&#39;, &#39;:p&#39;)</code>，但第二个必须手写foo.txt（可以是个不存在的文件）</li>
+<li>列出当前文件夹下的文件<code>:echo globpath(&#39;.&#39;, &#39;*&#39;)</code>，还可以递归地显示文件<code>:echo split(globpath(&#39;.&#39;, &#39;**&#39;), &#39;\n&#39;)</code>，递归地查找某个文件<code>:echo split(globpath(&#39;.&#39;, &#39;**/*.py&#39;), &#39;\n&#39;)</code></li>
+<li><code>expand(expr[, nosuf[, list]])</code>，expr可以以<ul>
+<li>&#39;%&#39; 当前文件</li>
+<li>&#39;#&#39; 另一个文件</li>
+<li>&#39;#n&#39; 另n个文件
+后面还可以接修饰符</li>
+<li>&#39;:p&#39; 扩展成全路径</li>
+<li>&#39;:h&#39; 会把最后一部分去掉（这个可以接在一些修饰符后面，比如&#39;:p:h&#39;就相当于全路径的文件夹名，如果只用&#39;:h&#39;可能只显示&#39;.&#39;）</li>
+<li>&#39;:t&#39; 只保留路径最后一部分</li>
+<li>&#39;:r&#39; 移除扩展名的全路径</li>
+<li>&#39;:e&#39; 文件扩展名</li>
+</ul>
+</li>
+<li><code>simplify(filename)</code> 尽可能简化路径，会把&#39;.././/&#39;这种简化掉，快捷方式或链接不解析</li>
+<li><code>resolve(filename)</code> 可以解析快捷方式或链接，并返回简化后的全路径</li>
+<li>关于通配符，可以有<code>?</code>,<code>*</code>,<code>**</code>,<code>[abc]</code>，这里注意在win下比较蛋疼，如果要实际匹配字面值&quot;path[abc]&quot;写<code>path\[abc]</code>会认为反斜杠是目录分隔符，避免这样，可以写成<code>path\[[]abc]</code></li>
+</ol>
+<h3 id="ch41-creating-a-full-plugin">CH41 Creating a Full Plugin</h3>
+<ol>
+<li>看到这里你可以停了，因为前面的姿势足够你完善自己的<code>~/.vimrc</code>脚本，去修复别人脚本的bug了，绝无讽刺的意思</li>
+<li>往下学之前，建议先玩下<a href="http://fogus.github.io/potion/index.html" target="_blank">Potion</a>语言，这是个很小的语言，使用它的目的是为了辅助我们写vim script</li>
+</ol>
+<h3 id="ch42-plugin-layout-in-the-dark-ages">CH42 Plugin Layout in the Dark Ages</h3>
+<ol>
+<li><code>~/.vim/colors/</code>在这里的文件记录了vim的颜色主题，如果运行<code>:color xxx</code>就能看<code>~/.vim/colors/xxx.vim</code>的配色方案了，查看当前配色都有哪些用<code>:hi</code></li>
+<li><code>~/.vim/plugin/</code>在这里的文件每次vim启动都会运行一次</li>
+<li><code>~/.vim/ftdetect/</code>这里的文件每次启动也会运行一次，<code>ft</code>的意思是<code>filetype</code>，这里的文件应该是包含<code>autocmd</code>用来切换filetype的，所以一般就<strong>一行</strong></li>
+<li><code>~/.vim/ftplugin/</code>这里的名字<strong>非常重要</strong>，如果你<code>:set filetype=derp</code>，则会找<code>~/.vim/ftplugin/derp.vim</code>，有就运行它，同时也支持目录，也会在<code>~/.vim/ftplugin/derp/</code>下找，这样有利于分组，注意：因为只针对ft作的修改，所以确保只设置了<strong>local-buffer</strong>而不要是全局的！（使用<code>:setlocal</code>）</li>
+<li><code>~/.vim/indent/</code>这里的文件名规律同<code>ftplugin</code>，同样这里也只能设置<strong>local-buffer</strong>，这个实际和<code>ftplugin</code>没啥区别，但分开放有利于理解</li>
+<li><code>~/.vim/compiler/</code>这个和<code>indent</code>又非常相像，只是它做的是编译器相关的</li>
+<li><code>~/.vim/after/</code>这个是在<code>~/.vim/plugin/</code>启动后启动，这个作用就是有的插件为了防止和其他插件的快捷键冲突又重定义一下</li>
+<li><code>~/.vim/autoload/</code>这个比较复杂了，后面会讲</li>
+<li><code>~/.vim/doc/</code>放插件文档的地方</li>
+</ol>
+<h3 id="ch43-a-new-hope-plugin-layout-with-pathogen">CH43 A New Hope: Plugin Layout with Pathogen</h3>
+<ol>
+<li>上面是以前的vim文件布局，新装插件需要手动解压然后BLABLA，如果作者删个文件你咋办？如果有个脚本（比如在autoload下）重名你是不是SB了？现在我们有了<a href="http://www.vim.org/scripts/script.php?script_id=2332" target="_blank">Pthogen</a>简直就是屌</li>
+<li>vim有个变量<code>runtimepath</code>，在搜索文件的时候也会去这里找，比如<code>syntax/</code>下的文件</li>
+<li>Pathogen会自动将<code>~/.vim/bundle/</code>下的目录加进<code>runtimepath</code>里，在这里的每个目录下都会包含一些vim的目录，比如<code>colors/</code>，如果你在这下面用了版本控制，比如Git,那你直接<code>git pull orgin master</code>就行了啊</li>
+</ol>
+<h3 id="ch44-detecting-filetypes">CH44 Detecting Filetypes</h3>
+<ol>
+<li>我们是要针对一种编程语言<code>potion</code>进行一些插件设置，首先新建一个<code>~/.vim/ftdetect/potion.vim</code>，输入<code>au BufNewFile,BufRead *.pn set filetype=potion</code>，这就告诉vim对于*.pn的文件，设置<code>filetype=potion</code></li>
+<li>可以<code>:set filetype=c.doxygen</code>，点号用来分隔两种文件类型，会先用c，再用doxygen</li>
+<li>一般会用<code>:setfiletype</code>而不是<code>:set filetype</code>，因为前者设完后会只载入一次插件或语法文件</li>
+</ol>
+<h3 id="ch45-basic-syntax-highlighting">CH45 Basic Syntax Highlighting</h3>
+<ol>
+<li>新建一个语法文件<code>~/.vim/syntax/potion.vom</code><pre><code class="lang-sh">if exists(&quot;b:current_syntax&quot;)
+ finish
+endif
+echom &quot;Our syntax highlighting code will go here.&quot;
+let b:current_syntax = &quot;potion&quot;
+</code></pre>
+注意用<code>b:current_syntax</code>保证互斥，不会被载入两次</li>
+<li>加入<pre><code class="lang-sh">syntax keyword potionKeyword to times
+highlight link potionKeyword Keyword
+</code></pre>
+定义<code>to</code>,<code>times</code>是关键词，然后连接potion关键词到关键词组（这个XX组就是决定了一套配色，比如函数是蓝色）</li>
+<li>上面<code>syntax keyword {group-name} [{options}] {keyword} ... [{options}]</code>，注意syntax后的keyword是固定的，接着是自定义的组名，再接着是关键词，关键词要满足<code>iskeyword</code></li>
+</ol>
+<h3 id="ch46-advanced-syntax-highlighting">CH46 Advanced Syntax Highlighting</h3>
+<ol>
+<li>由于一般注释都是用<code>#</code>，而<code>#</code>又不是<code>iskeyword</code>，所以我们要用正则去匹配及它后面的内容<pre><code class="lang-sh">syntax match potionComment &quot;\v#.*$&quot;
+highlight link potionComment Comment
+</code></pre>
+<code>\v</code>表示&quot;very magic&quot;，对于|()这种不需要加&quot;\&quot;转义了，这里还要注意<code>syntax match</code>是不支持放在组里的</li>
+<li><code>hi link</code>的位置可以任意放，放匹配前面也可以</li>
+<li>优先级是先按最后匹配的来，然后<code>Keyword</code>大于<code>Match</code>和<code>Region</code>，最后匹配开始较前的优先于匹配开始较靠后的</li>
+<li>匹配的两端必须保证是一样的字符，比如可以是+&quot;+</li>
+</ol>
+<h3 id="ch47-even-more-advanced-syntax-highlighting">CH47 Even More Advanced Syntax Highlighting</h3>
+<ol>
+<li>想学习更高端的语法文件配置是继续读<code>:h syntax</code>或者看别人写的</li>
+<li>这次我们用<code>syntax region</code>来匹配字符串<pre><code class="lang-sh">syntax region potionString start=/\v&quot;/ skip=/\v\\./ end=/\v&quot;/
+highlight link potionString String
+</code></pre>
+<code>skip</code>是用来跳过字符串中所有以反斜杠和一个任意字符的（当然也包括引号），其实这里用<code>skip=/\v\\&quot;/</code>也可以，但应该是为了兼顾单引号的情况（这样就不用改skip了）就写成<code>\\.</code>了，比如<code>&quot;She said: \&quot;Vimscript is tricky, but useful\&quot;!&quot;</code>，</li>
+</ol>
+<h3 id="ch48-basic-folding">CH48 Basic Folding</h3>
+<ol>
+<li>手动折叠，保存在内存中，关了就没了，你可以用<code>:mkview [1|2...]</code>来保存，用<code>:loadview [1|2...]</code>来载入，都保存在<code>~/.vim/view</code>中，参看<code>:h viewdir</code></li>
+<li>Marker折叠，这种是文本中带有<code>// {{{</code>和<code>// }}}</code>的会自动折叠，但比如在JS里<code>{</code>和<code>}</code>也会折叠</li>
+<li>Diff折叠，这个只有在对比文件中才有用</li>
+<li>Expr折叠，这是最强大的自定义折叠功能，但工作量也多，下章讲</li>
+<li>Indent折叠，按缩写折叠，以及一些空行</li>
+<li><ul>
+<li><code>zf[old]</code>是创建一个折叠</li>
+<li><code>zc[close]</code>是关闭所在光标折叠</li>
+<li><code>zo[pen]</code>是打开所在光标折叠</li>
+<li><code>zm[ore]</code>是进行一层折叠</li>
+<li><code>zr[educe]</code>是减少一层（即统一打开一层折叠）</li>
+<li>以上都可以配合大写使用，表示为全部做某事</li>
+</ul>
+</li>
+<li><code>foldlevel</code>大于这个的所有折叠将被折叠，如果是0就表示关闭所有折叠（相当于执行了<code>zM</code>)，<code>foldlevelstart</code>是当你打开一个新文件时的<code>foldlevel</code></li>
+<li><code>foldminlines</code>表示折叠后至少要展示的行数，也就是说少于等于这个行数就不折叠了，如果你仍然要折叠，那会认为更大一段要折叠，比如一个缩进只有2行，这时<code>:set foldminlines=2</code>，那这2行死活是不会折叠的，如果你在两行中按<code>zc</code>，则会将周围的上一层缩进一起折叠了</li>
+</ol>
+<h3 id="ch49-advanced-folding">CH49 Advanced Folding</h3>
+<ol>
+<li>折叠规则：<ul>
+<li>每一行都有一个折叠层数，这是个是&gt;=0的数</li>
+<li>==0的行是永远不会折叠的</li>
+<li>相邻折叠层数的行会被一起折叠</li>
+<li>如果一个层数X被折叠，则所有相邻大于等于X的行都会被折叠进来</li>
+</ul>
+</li>
+<li>你可以用<code>:echo foldlevel(line_num)</code>来显示第几行的折叠层数</li>
+<li>有个技巧是，如果你自定义的一个foldlevel函数返回了&#39;-1&#39;，则会告诉vim这是未定义的折叠层数，vim会使用这行上面或下面的一行中<strong>较小</strong>的作为这行的foldlevel</li>
+<li>如果上面函数返回<code>&gt;n</code>，就表示这是个大于n的折叠层数</li>
+<li>一般自己定义一个按Indent的层数函数可以这样写<pre><code class="lang-sh">function! IndentLevel(lnum)
+ return indent(a:lnum) / &amp;shiftwidth
+endfunction
+</code></pre>
+</li>
+</ol>
+<h3 id="ch50-section-movement-theory">CH50 Section Movement Theory</h3>
+<ol>
+<li>这章好像讲了<code>[[</code>,<code>[]</code>,<code>][</code>,<code>]]</code>起源于<code>nroff</code>语言（一类类似Latex的文本语言）的宏</li>
+<li><code>[</code>和<code>]</code>分别是向前或向后寻找，第二位的<code>[</code>,<code>]</code>表示寻找<code>{</code>还是<code>}</code>，在C语言里就是跳到上（或下，取决于第一位是<code>[</code>还是<code>]</code>）一个函数的开始或结尾</li>
+</ol>
+<h3 id="ch51-potion-section-movement">CH51 Potion Section Movement</h3>
+<ol>
+<li>这章为Potion语言打造了一个自制的section跳转</li>
+</ol>
+<h3 id="ch52-external-commands">CH52 External Commands</h3>
+<ol>
+<li>这章实现了一个自动编译的功能，新建<code>~/.vim/ftplugin/potion/running.vim</code><pre><code class="lang-sh">if !exists(&quot;g:potion_command&quot;)
+ let g:potion_command = &quot;potion&quot;
+endif
+function! PotionCompileAndRunFile()
+ silent !clear
+ execute &quot;!&quot; . g:potion_command . &quot; &quot; . bufname(&quot;%&quot;)
+endfunction
+nnoremap &lt;buffer&gt; &lt;localleader&gt;r :call PotionCompileAndRunFile()&lt;cr&gt;
+</code></pre>
+这里需要设置<code>g:potion_command</code>的值</li>
+<li>介绍下<code>system(expr[, input])</code>函数，expr是命令，input是之后输入的内容，比如有的命令支持从stdin读取数据，input就是那里的内容</li>
+<li>给那些想用vim做任何事的人看<code>:h design-not</code></li>
+<li><code>:read expr</code>是在当前光标下插入expr文件内容，<code>:read !expr</code>是插入执行命令的结果</li>
+</ol>
+<h3 id="ch53-autoloading">CH53 Autoloading</h3>
+<ol>
+<li>对于一些小的插件，在载入时全部载入还是OK的，但如果比较大的就会花费一些时间，这时就要延迟载入，用<code>:call somefile#Hello()</code>，有了这个的函数，vim会从<code>~/.vim/autoload/somefile.vim</code>中找这个函数，如果有多个<code>#</code>，比如<code>path#a#b()</code>会从<code>~/.vim/autoload/path/a.vim</code>中找，然后多次调用不会重新载入这个文件，所以你作了修改也没用，但如果你调用<code>:call somefile#BadFunction()</code>，那就会重新载入了，并且<code>#Hello()</code>的更新也生效了</li>
+<li>一般会把map的函数以这种命名放在autoload里，这样只有第一次使用这个map时才会load这个文件</li>
+</ol>
+<h3 id="ch54-documentation">CH54 Documentation</h3>
+<ol>
+<li>每个插件都最好有个文档来说明，这个文件放在<code>~/.vim/doc/</code>下，与插件名同名的<strong>.txt</strong>文件</li>
+<li>编辑完文件后，用<code>:Helptags</code>把这个文件加入索引，然后就可以用<code>:h xxx</code>来查看了</li>
+<li>你可以用<a href="http://www.figlet.org/" target="_blank">figlet</a>来生成一个字符的立体画，非常酷炫</li>
+<li>哪些需要放在doc中说明呢<ul>
+<li>Introduction 这是放整个插件的概览</li>
+<li>Usage 告诉用户应该怎么用，比如有哪些map，如果mapping太多，建议你单独开一个<code>Mappings</code>章节来放</li>
+<li>Mappings 见上</li>
+<li>Configuration 这里应该列出所有需要用户修改的值，及它的<strong>效果</strong>和<strong>默认值</strong></li>
+<li>License 只要包含license的url就行，千万别包含整个文本</li>
+<li>Bugs 这里只记录主要的bugs，并且告诉用户怎么找到你报告bug</li>
+<li>Contributing 如果你期望用户可以帮你修复bug，明确告诉用户他应当怎么做去修复bug，是发pull request？还是发邮件？</li>
+<li>Changelog 记录版本X到版本Y的变化过程，十分建议你按照<a href="http://semver.org/" target="_blank">Semantic Versioning</a>去定义你的版本</li>
+<li>Credits 这里可以包含自己的名字，以及一些给你启发的脚本名，贡献者们</li>
+</ul>
+</li>
+<li>帮助文档中，一排的<code>=</code>可以分隔章节，<code>-</code>分隔小章节，用<code>*xxx*</code>来生成tag，这样能被help索引到，用<code>|</code>包围的单词是一个跳转的链接，在这些词上按<code>&lt;c-]&gt;</code>可以跳到对应的tag上，用单引号<code>&#39;</code>来表示一个选项名，用波浪号放在一行结果，<code>Heading~</code>将会高亮整行，用<code>&gt; xxxx \n yyyy &lt;</code>表示一段代码，中间可以换行，还有些自动高亮的单词，如<code>Todo</code>,<code>Error</code>是<code>~/.vim/syntax/help.vim</code>下配置的</li>
+<li>有些好的例子可以参考下<ul>
+<li><a href="https://github.com/sjl/clam.vim/blob/master/doc/clam.txt" target="_blank">Clam</a> 一个简单的例子</li>
+<li><a href="https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt" target="_blank">NERD_tree</a> 观察它如何组织mapping</li>
+<li><a href="https://github.com/tpope/vim-surround/blob/master/doc/surround.txt" target="_blank">Surround</a></li>
+<li><a href="https://github.com/sjl/splice.vim/blob/master/doc/splice.txt" target="_blank">Splice</a> 这里用了ASCII画的形式来描述</li>
+</ul>
+</li>
+<li>可以使用<code>:left</code>,<code>:center</code>,<code>:right</code>来达到左中右对齐的效果</li>
+</ol>
+<h3 id="ch55-distribution">CH55 Distribution</h3>
+<ol>
+<li>将你的插件放在网上，比如<a href="http://www.vim.org/scripts/" target="_blank">the scripts section of the Vim websit</a>，但现在大多放在GitHub上，也方便使用Pathogen管理</li>
+<li>关注reddit上的<a href="http://www.reddit.com/r/vim/" target="_blank">/r/vim</a>版块</li>
+</ol>
+<h3 id="ch56-what-now-">CH56 What Now?</h3>
+<ol>
+<li>以下内容在你闲得蛋疼可以看<ul>
+<li><code>:h highlight</code> 你可以发现一些内置的配色方案，可以用在之后的插件中</li>
+<li><code>:h user-commands</code> 学习怎样创建一个你自己的Ex命令，类似<code>:command</code></li>
+<li><code>:h ins-completion</code> 这就是插入模式下的自动补全啊，进阶阅读<code>:h omnifunc</code>和<code>:h compl-omni</code>（这里原作者打成<code>:h coml-omni</code>了）</li>
+<li><code>:h quickfix.txt</code> vim还可以和编译器进一步地互动，阅读这个吧</li>
+<li><code>:h Python</code> <code>:h Ruby</code> <code>:h Lua</code> vim居然还支持这些语言的接口</li>
+<li>以下是些更有趣的内容<ul>
+<li><code>:help various-motions</code></li>
+<li><code>:help sign-support</code></li>
+<li><code>:help virtualedit</code></li>
+<li><code>:help map-alt-keys</code></li>
+<li><code>:help error-messages</code></li>
+<li><code>:help development</code></li>
+<li><code>:help tips</code></li>
+<li><code>:help 24.8</code></li>
+<li><code>:help 24.9</code></li>
+<li><code>:help usr_12.txt</code></li>
+<li><code>:help usr_26.txt</code></li>
+<li><code>:help usr_32.txt</code></li>
+<li><code>:help usr_42.txt</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>非常感谢GB大牛推荐我阅读这本书！</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./index.html" class="navigation navigation-prev navigation-unique"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="gitbook/app.js"></script>
+        
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

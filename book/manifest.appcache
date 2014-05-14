@@ -1,8 +1,9 @@
 CACHE MANIFEST
-# Revision 1400041319959
+# Revision 1400045681947
 
 CACHE:
 index.html
+learnvimscriptthehardway.html
 gitbook/app.js
 gitbook/fonts/anonymouspro/400.woff
 gitbook/fonts/anonymouspro/400i.woff
