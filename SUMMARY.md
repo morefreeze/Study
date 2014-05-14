@@ -1,5 +1,6 @@
 # SUMMARY
 
+These are my book note.
 I just have a whole chapter. :P
 
-* [Read](./learnvimscriptthehardway.md)
+- [Whole Note](./Whole.md)
