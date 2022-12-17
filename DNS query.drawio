@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-17T09:04:27.782Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.2" etag="rCdaSR3kh1gQm175cVah" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-17T09:10:58.156Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.7.2" etag="SZWd8GtszoWOTNS3odlF" type="github">
   <diagram id="NoQcuWux8GQ24uY9XdF3" name="Page-1">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -55,19 +55,19 @@
         <mxCell id="sMdmFIbR0jWiaRZCL-oF-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="sMdmFIbR0jWiaRZCL-oF-7" target="sMdmFIbR0jWiaRZCL-oF-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sMdmFIbR0jWiaRZCL-oF-7" value="Top Level Domain" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="sMdmFIbR0jWiaRZCL-oF-7" value="Root Server" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="620" y="180" width="146" height="40" as="geometry" />
         </mxCell>
         <mxCell id="sMdmFIbR0jWiaRZCL-oF-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.9;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;" edge="1" parent="1" source="sMdmFIbR0jWiaRZCL-oF-13" target="sMdmFIbR0jWiaRZCL-oF-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sMdmFIbR0jWiaRZCL-oF-13" value="Lv 2 DNS" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="sMdmFIbR0jWiaRZCL-oF-13" value="Top Level Domain" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="620" y="260" width="146" height="40" as="geometry" />
         </mxCell>
         <mxCell id="sMdmFIbR0jWiaRZCL-oF-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.65;entryY=1.075;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;" edge="1" parent="1" source="sMdmFIbR0jWiaRZCL-oF-14" target="sMdmFIbR0jWiaRZCL-oF-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sMdmFIbR0jWiaRZCL-oF-14" value="Lv3 DNS" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="sMdmFIbR0jWiaRZCL-oF-14" value="Lv2 Server" style="whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="620" y="340" width="146" height="40" as="geometry" />
         </mxCell>
         <mxCell id="sMdmFIbR0jWiaRZCL-oF-22" value="Recursive query" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
