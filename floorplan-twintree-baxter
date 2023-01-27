@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T09:24:51.652Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="6Ebya25M0Hl_TwCPkDA0" version="20.8.11" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-27T09:50:36.355Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="tZsJrXdkj_UuI-Nsx63Q" version="20.8.11" type="github" pages="2">
   <diagram name="baxter-floorplan" id="-nwROzMRIIznQb2hKTSB">
     <mxGraphModel dx="2901" dy="2293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -185,7 +185,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KSr_8rWTxjowWe2Mht0b" name="baxter-twintree">
-    <mxGraphModel dx="2261" dy="1933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
